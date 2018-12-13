@@ -1,0 +1,59 @@
+// /* source-serif-pro-regular - latin */
+// @font-face {
+//   font-family: 'Source Serif Pro';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Source Serif Pro'), local('SourceSerifPro-Regular'),
+//        url('../assets/fonts/lato/source-serif-pro-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('../assets/fonts/lato/source-serif-pro-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+//
+// /* source-serif-pro-600 - latin */
+// @font-face {
+//   font-family: 'Source Serif Pro';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: local('Source Serif Pro Semibold'), local('SourceSerifPro-Semibold'),
+//        url('../assets/fonts/lato/source-serif-pro-v5-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('../assets/fonts/lato/source-serif-pro-v5-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+//
+// /* source-serif-pro-700 - latin */
+// @font-face {
+//   font-family: 'Source Serif Pro';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'),
+//        url('../assets/fonts/lato/source-serif-pro-v5-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('../assets/fonts/lato/source-serif-pro-v5-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }
+
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * adobe-caslon-pro:
+ *   - http://typekit.com/eulas/000000000000000000012d68
+ *   - http://typekit.com/eulas/000000000000000000012d65
+ *
+ * © 2009-2018 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2018-11-08 12:47:02 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=wjh5bdc&ht=tk&f=8482.8484&a=11757669&app=typekit&e=css");
+
+@font-face {
+font-family:"adobe-caslon-pro";
+src:url("https://use.typekit.net/af/3cbd9b/000000000000000000012d68/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/3cbd9b/000000000000000000012d68/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/3cbd9b/000000000000000000012d68/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"adobe-caslon-pro";
+src:url("https://use.typekit.net/af/ed9e57/000000000000000000012d65/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/ed9e57/000000000000000000012d65/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/ed9e57/000000000000000000012d65/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-style:normal;font-weight:700;
+}
+
+.tk-adobe-caslon-pro { font-family: "adobe-caslon-pro",serif; }

@@ -1,0 +1,28 @@
+﻿.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    padding: 20px 0 20px 0;
+
+    .active {
+
+    }
+
+    .breadcrumb-item {
+        &:before {
+            font-family: 'Glyphicons Halflings';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            /* Better Font Rendering =========== */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: $black;
+            font-size: small;
+        }
+    }
+}

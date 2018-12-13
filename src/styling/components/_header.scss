@@ -1,0 +1,71 @@
+﻿header {
+    background: $blue;
+    color: white;
+    padding: 12px 0 16px 0;
+
+    i {
+        padding-right: 5px;
+
+        &:before {
+            color: white !important;
+        }
+    }
+
+    &.inverse {
+        i {
+
+            &:before {
+                color: $gray-600 !important;
+            }
+        }
+    }
+
+    .icon-User {
+        font-size: 0.8rem;
+    }
+
+    nav {
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        #advertisement {
+            padding-right: 10px;
+            border-right: 1px solid;
+            border-color: white;
+        }
+
+        #logout {
+          padding-left: 10px;
+        }
+
+        #login {
+            padding-left: 10px;
+
+            .icon-user {
+                color: white;
+            }
+        }
+    }
+
+    &.inverse {
+        background-color: white;
+        color: $grey-blue;
+        padding: 20px 0 100px 0;
+
+        nav {
+            padding-top: 10px;
+
+            .icon-phone {
+                &:before {
+                    color: $grey-blue;
+                }
+            }
+        }
+    }
+}

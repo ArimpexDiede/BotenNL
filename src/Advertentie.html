@@ -1,0 +1,1019 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Boten.nl</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="inverse">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="assets/images/logo.png" />
+                    </a>
+                </div>
+                <div class="col-auto ml-auto">
+                    <nav>
+                        <a href="#"><i class="icon-Phone"></i></a>
+                        <span class="d-none d-md-inline-block">
+                            We helpen je graag verder! Bel 088-824 4800.
+                        </span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="advertentie-plaatsen" class="row justify-content-center">
+            <div class="col-12">
+                <!--Wizard-->
+                <div class="wizard">
+                    <ul id="sticky-header" class="wizard-nav nav nav-tabs" role="tablist">
+                        <li data-target="#tab1">
+                            <a id="step-1" href="#tab1" class="active" data-toggle="tab" role="tab" aria-expanded="true">
+                                <div class="step">
+                                    <span class="step-number">1</span>
+                                    <i class="icon-checkmark"></i>
+                                </div>
+                                <div class="title d-none d-md-flex" style="margin-left: -10%;">Advertentie maken</div>
+                            </a>
+                        </li>
+                        <li data-target="#tab2">
+                            <a id="step-2" href="#tab2" data-toggle="tab" role="tab">
+                                <div class="step">
+                                    <span class="step-number">2</span>
+                                    <i class="icon-checkmark"></i>
+                                </div>
+                                <div class="title d-none d-md-flex" style="margin-left: -7%;">Pakket keuze</div>
+                            </a>
+                        </li>
+                        <li data-target="#tab3">
+                            <a id="step-3" href="#tab3" data-toggle="tab" role="tab">
+                                <div class="step">
+                                    <span class="step-number">3</span>
+                                    <i class="icon-checkmark"></i>
+                                </div>
+                                <div class="title d-none d-md-flex" style="margin-left: -10%;">Controle & Betalen</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <!--Wizard content-->
+                    <div class="tab-content">
+                        <!--Step 1-->
+                        <div class="tab-pane fade active show" id="tab1" aria-expanded="true" role="tabpanel">
+                            <form>
+                                <h1>Basisinformatie</h1>
+                                <br />
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <nav class="breadcrumb">
+                                                    <span class="breadcrumb-item">Rubriek</span>
+                                                    <span class="breadcrumb-item">Motorkruisers</span>
+                                                </nav>
+                                            </div>
+                                            <div class="col text-md-right underline">
+                                                <a href="#"> Wijzig rubriek</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-md-4">
+                                        <label for="inputMerk" class="col-form-label">Merk*</label>
+                                        <input type="text" class="form-control" id="inputMerk" placeholder="Typ hier je merk">
+                                    </div>
+                                    <div class="form-group col-12 col-md-4">
+                                        <label for="inputType" class="col-form-label">Type*</label>
+                                        <select id="inputType" class="form-control custom-select">
+                                            <option selected>Maak een keuze</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12 col-md-3 text-md-center">
+                                        <label for="inputConditie" class="col-form-label">Conditie*</label>
+                                        <div id="inputConditie" style="padding-top: 10px;">
+                                            <div class="form-check form-check-inline">
+                                                <label class="custom-control custom-radio">
+                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" class="custom-control-input" checked>
+                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description">Nieuw</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="custom-control custom-radio">
+                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" class="custom-control-input">
+                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description">Gebruikt</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-md-4">
+                                        <label for="inputMateriaal" class="col-form-label">Rompmateriaal*</label>
+                                        <select id="inputMateriaal" class="form-control custom-select">
+                                            <option selected>Maak een keuze</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12 col-md-4 col-lg-2">
+                                        <label for="inputBouwjaar" class="col-form-label">Bouwjaar*</label>
+                                        <input type="text" class="form-control" id="inputBouwjaar" placeholder="Bouwjaar">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4 col-lg-2">
+                                        <label for="inputLengte" class="col-form-label">Lengte*</label>
+                                        <input type="text" class="form-control" id="inputLengte" placeholder="Aantal meter">
+                                    </div>
+                                    <div class="form-group col-md-4 col-lg-2">
+                                        <label for="inputBreedte" class="col-form-label">Breedte</label>
+                                        <input type="text" class="form-control" id="inputBreedte" placeholder="Aantal meter">
+                                    </div>
+                                    <div class="form-group col-md-4 col-lg-2">
+                                        <label for="inputDiepgang" class="col-form-label">Diepgang</label>
+                                        <input type="text" class="form-control" id="inputDiepgang" placeholder="Aantal meter">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-md-4">
+                                        <label for="inputLigplaats" class="col-form-label">Ligplaats*</label>
+                                        <input type="text" class="form-control" id="inputLigplaats" placeholder="Ligplaats">
+                                    </div>
+                                    <div class="form-group col-12 col-md-4 col-lg-2">
+                                        <label for="inputPostcode" class="col-form-label">Postcode ligplaats*</label>
+                                        <input type="text" class="form-control" id="inputPostcode" placeholder="Postcode">
+                                    </div>
+
+                                    <div class="form-group col-12 col-md-4 col-lg-2 text-md-center">
+                                        <br />
+                                        <br />
+                                        <label class="custom-control custom-checkbox" style="margin-top: 17px;">
+                                            <input type="checkbox" class="custom-control-input" checked="">
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">Toon op kaart</span>
+                                        </label>
+
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-md-4">
+                                        <label for="inputPrijsstelling" class="col-form-label">Prijsstelling*</label>
+                                        <select id="inputPrijsstelling" class="form-control custom-select">
+                                            <option value="1" selected>Vaste prijs</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12 col-md-4 col-lg-2">
+                                        <label for="inputPrijs" class="col-form-label">Prijs*</label>
+                                        <input type="text" class="form-control" id="inputPrijs" placeholder="Euro’s">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-md-6">
+                                        <label for="inputTekst" class="col-form-label">Tekst voor op de website van Boten.nl*</label>
+                                        <textarea class="form-control" id="inputTekst" rows="5" maxlength="5000"></textarea>
+                                    </div>
+                                    <div class="form-group col-12 col-md-6">
+                                        <label for="inputMagazine" class="col-form-label">Tekst voor in het Boten Magazine*</label>
+                                        <textarea class="form-control" id="inputMagazine" rows="5" maxlength="140"></textarea>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-md-4">
+                                        <b>Foto’s* (0/24)</b>
+                                        <div style="padding-top: 5px;">
+                                            Je kunt meerdere foto’s tegelijk uploaden. Maximaal 24. Pas de volgorde van de foto’s aan door ze te slepen.
+                                        </div>
+                                        <br />
+                                        <div class="upload-file">
+                                            <div>Dit wordt je hoofdfoto. Deze is verplicht.</div>
+                                            <br />
+                                            <button type="button" class="btn btn-outline-primary btn-lg">Upload foto</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-md-4">
+                                        <b>Aanvullende documenten (0/4)</b>
+                                        <div style="padding-top: 5px;">
+                                            Bijv: Aankoopbewijs, Registratienummer, etc.
+                                        </div>
+                                        <br />
+                                        <button type="button" class="btn btn-outline-primary btn-lg">Bladeren</button>
+                                    </div>
+                                </div>
+                                <hr />
+                                <br />
+                                <br />
+                                <h1>Specifieke informatie</h1>
+                                <div>Door specifieke informatie in te vullen verhoog je de verkoopkans van je boot tot wel 17%.</div>
+                                <br />
+                                <br />
+                                <div data-children=".item">
+                                    <div class="collapsible-tab">
+                                        <a data-toggle="collapse" href="#specificaties-accordion" aria-expanded="true" aria-controls="specificaties-accordion">
+                                            <i class="glyphicon glyphicon-menu-down"></i>
+                                            <i class="glyphicon glyphicon-menu-right"></i>
+                                            Specificaties
+                                            <hr />
+                                        </a>
+                                        <div id="specificaties-accordion" class="collapse show" role="tabpanel">
+                                            <div class="form-row">
+                                                <div class="form-group col-12 col-md-4">
+                                                    <label for="inputRompvorm" class="col-form-label">Rompvorm</label>
+                                                    <select class="form-control custom-select" id="inputRompvorm">
+                                                        <option selected>Maak een keuze</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-12 col-md-4">
+                                                    <label for="inputGewicht" class="col-form-label">Gewicht (kg)</label>
+                                                    <select class="form-control custom-select" id="inputGewicht">
+                                                        <option selected>Maak een keuze</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-12 col-md-4">
+                                                    <label for="inputWaterverplaatsing" class="col-form-label">Waterverplaatsing (ton)</label>
+                                                    <select class="form-control custom-select" id="inputWaterverplaatsing">
+                                                        <option selected>Maak een keuze</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-12 col-md-4">
+                                                    <label for="inputDoorvaarthoogte" class="col-form-label">Doorvaarthoogte</label>
+                                                    <select class="form-control custom-select" id="inputDoorvaarthoogte">
+                                                        <option selected>Maak een keuze</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-12 col-md-4">
+                                                    <label for="inputAantalhutten" class="col-form-label">Aantal hutten</label>
+                                                    <select class="form-control custom-select" id="inputAantalhutten">
+                                                        <option selected>Maak een keuze</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-12 col-md-4">
+                                                    <label for="inputSlaapplaatsen" class="col-form-label">Aantal slaapplaatsen</label>
+                                                    <select class="form-control custom-select" id="inputSlaapplaatsen">
+                                                        <option selected>Maak een keuze</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-12 col-md-4">
+                                                    <label for="inputToiletten" class="col-form-label">Toiletten</label>
+                                                    <select class="form-control custom-select" id="inputToiletten">
+                                                        <option selected>Maak een keuze</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-12 col-md-4">
+                                                    <label for="inputBesturing" class="col-form-label">Besturing</label>
+                                                    <select class="form-control custom-select" id="inputBesturing">
+                                                        <option selected>Maak een keuze</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-12 col-md-4">
+                                                    <label for="inputKielsoort" class="col-form-label">Kielsoort</label>
+                                                    <select class="form-control custom-select" id="inputKielsoort">
+                                                        <option selected>Maak een keuze</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapsible-tab">
+                                        <a data-toggle="collapse" href="#motor-accordion" aria-expanded="false" aria-controls="motor-accordion" class="collapsed">
+                                            <i class="glyphicon glyphicon-menu-down"></i>
+                                            <i class="glyphicon glyphicon-menu-right"></i>
+                                            Motor
+                                            <hr />
+                                        </a>
+                                        <div id="motor-accordion" class="collapse" role="tabpanel">
+                                            Motor input fields
+                                        </div>
+                                    </div>
+                                    <div class="collapsible-tab">
+                                        <a data-toggle="collapse" href="#tuig-accordion" aria-expanded="false" aria-controls="tuig-accordion" class="collapsed">
+                                            <i class="glyphicon glyphicon-menu-down"></i>
+                                            <i class="glyphicon glyphicon-menu-right"></i>
+                                            Tuig
+                                            <hr />
+                                        </a>
+                                        <div id="tuig-accordion" class="collapse" role="tabpanel">
+                                            Tuig input fields
+                                        </div>
+                                    </div>
+                                    <div class="collapsible-tab">
+                                        <a data-toggle="collapse" href="#uitrusting-accordion" aria-expanded="false" aria-controls="uitrusting-accordion" class="collapsed">
+                                            <i class="glyphicon glyphicon-menu-down"></i>
+                                            <i class="glyphicon glyphicon-menu-right"></i>
+                                            Uitrusting
+                                            <hr />
+                                        </a>
+                                        <div id="uitrusting-accordion" class="collapse" role="tabpanel">
+                                            Uitrusting input fields
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <!--show only on mobile-->
+                                <button type="button" class="btn btn-link btn-sm d-md-none"><span class="glyphicon glyphicon-menu-left"></span>Annuleren</button>
+                                <button type="button" class="btn btn-primary btn-sm float-right d-md-none">Volgende</button>
+                                <br />
+                                <!--show only on tablet and larger-->
+                                <div class="col-12" style="">
+                                    <div class="row justify-content-between">
+                                        <div class="col-4">
+                                            <button type="button" class="btn btn-link d-none d-md-block" style="padding-left:0; margin-left: -10px;"><span class="glyphicon glyphicon-menu-left"></span>Rubriek kiezen</button>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <button type="button" onclick="document.querySelector('#step-2 .step').click();"
+                                                    class="btn btn-primary float-right d-none d-md-block btn-lg nextButton">
+                                                Ga naar pakketkeuze
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!--Step 3 important place before last step!!-->
+                        <div class="tab-pane fade" id="tab3" aria-expanded="false" role="tabpanel">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-8">
+                                        <h1>Contactgegevens & betalen</h1>
+                                        <div class="form-row">
+                                            <div class="form-group col-12 col-md-5">
+                                                <label for="inputVoornaam" class="col-form-label">Voornaam*</label>
+                                                <input type="text" class="form-control" id="inputVoornaam" placeholder="Voornaam">
+                                            </div>
+                                            <div class="form-group col-6 col-md-2">
+                                                <label for="inputTussenv" class="col-form-label">Tussenvoegsel</label>
+                                                <input type="text" class="form-control" id="inputTussenv" placeholder="Tussenv.">
+                                            </div>
+                                            <div class="form-group col-12 col-md-5">
+                                                <label for="inputAchternaam" class="col-form-label">Achternaam*</label>
+                                                <input type="text" class="form-control" id="inputAchternaam" placeholder="Achternaam">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-12 col-md-5">
+                                                <label for="inputLand" class="col-form-label">Land</label>
+                                                <select class="form-control custom-select" id="inputLand">
+                                                    <option>Nederland</option>
+                                                    <option>Duitsland</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-6 col-md-2">
+                                                <label for="inputZip" class="col-form-label">Postcode</label>
+                                                <input type="text" class="form-control" id="inputZip" placeholder="Postcode">
+                                            </div>
+
+                                            <div class="form-group col-3 col-md-2">
+                                                <label for="inputHuisnummer" class="col-form-label">Huisnr.</label>
+                                                <input type="text" class="form-control" id="inputHuisnummer" placeholder="nr.">
+                                            </div>
+
+                                            <div class="form-group col-3 col-md-2">
+                                                <label for="inputToevoeging" class="col-form-label">Toev.</label>
+                                                <input type="text" class="form-control" id="inputToevoeging" placeholder="Toev.">
+                                            </div>
+                                        </div>
+                                        <div class="text-muted">
+                                            Sint Magdalenastraat, Amsterdam
+                                            <br />
+                                            <b>Nederland</b>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-12 col-md-7">
+                                                <label for="inputTel" class="col-form-label">Telefoonnummer*</label>
+                                                <input type="text" class="form-control" id="inputTel" placeholder="+31 6 35656589">
+                                            </div>
+
+                                            <div class="form-group col-12 col-md-5" style="padding-left: 20px;">
+                                                <label class="col-form-label">Contactvoorkeur</label>
+                                                <br />
+                                                <div class="form-check-inline" style="padding-top: 10px;">
+                                                    <label class="form-check-label custom-control custom-radio">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadioEmail" value="optionEmail" class="custom-control-input" checked>
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Email</span>
+                                                    </label>
+                                                    <label class="form-check-label custom-control custom-radio">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadioTelefonisch" value="optionTelefonisch" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Telefonisch</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 order-summary">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <b>Je bestelling</b>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <a href="#">Wijzig</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-item">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                Basis Pakket
+                                                            </div>
+                                                            <div class="col text-right">
+                                                                € 26,-
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-item ">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                Extra rubriek
+                                                            </div>
+                                                            <div class="col text-right">
+                                                                € 3,-
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                Boegbeeld
+                                                            </div>
+                                                            <div class="col text-right">
+                                                                € 25,-
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <br />
+                                                <div class="text-right">
+                                                    <span class="mr-2">Totaal</span>
+                                                    <span class="h1 text-primary">€ 54,-</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div>
+                                                    <b>Betaalmogelijkheden</b>
+                                                </div>
+                                                <br />
+                                                <span class="icon-payment_ideal">
+                                                    <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span>
+                                                </span>
+                                                <span class="icon-payment_mastercard">
+                                                    <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                                                </span>
+                                                <span class="icon-payment_visa">
+                                                    <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12" style="padding-top: 40px;">
+                                        <div class="row justify-content-between">
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-link" style="padding-left:0;" onclick="document.querySelector('#step-2 .step').click();">
+                                                    <span class="glyphicon glyphicon-menu-left"></span>
+                                                    Pakketkeuze
+                                                </button>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <button type="button" class="btn btn-primary float-right btn-lg">Betalen</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!--Step 2-->
+                        <div class="tab-pane fade" id="tab2" aria-expanded="false" role="tabpanel">
+                            <form>
+                                <h1>Selecteer een pakket</h1>
+
+                                <!--Package selection only shown in mobile-->
+                                <div data-children=".item" data-toggle="buttons" class="package-selections-mobile d-md-none">
+                                    <div class="collapsible-tab">
+                                        <div href="#" class="card btn package-selection" role="button">
+                                            <input type="radio" name="options" id="package-selection-option1-mobile" autocomplete="off">
+                                            <div class="card-body">
+                                                <a data-toggle="collapse" href="#budget-package-accordion" aria-expanded="false" aria-controls="budget-package-accordion" class="collapsed">
+                                                    <div class="row justify-content-between">
+                                                        <div class="col-8">
+                                                            <i class="glyphicon glyphicon-menu-down"></i>
+                                                            <i class="glyphicon glyphicon-menu-right"></i>
+                                                            Budget pakket
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            € 19,-
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div id="budget-package-accordion" class="collapse" role="tabpanel">
+                                                    <br />
+                                                    <div>
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        <span class="remain-text-color">3 maanden online</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapsible-tab">
+                                        <div href="#" class="card btn package-selection active" role="button">
+                                            <input type="radio" name="options" id="package-selection-option2-mobile" autocomplete="off">
+                                            <div class="card-body">
+                                                <a data-toggle="collapse" href="#basis-package-accordion" aria-expanded="false" aria-controls="basis-package-accordion">
+                                                    <div class="row justify-content-between">
+                                                        <div class="col-8">
+                                                            <i class="glyphicon glyphicon-menu-down"></i>
+                                                            <i class="glyphicon glyphicon-menu-right"></i>
+                                                            Basis pakket
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            € 26,-
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div id="basis-package-accordion" class="collapse" role="tabpanel">
+                                                    <br />
+                                                    <div>
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        <span class="remain-text-color">3 maanden online</span>
+                                                    </div>
+                                                    <hr />
+                                                    <div>
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        <span class="remain-text-color">Advertentie in Boten magazine</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapsible-tab">
+                                        <div href="#" class="card btn package-selection" role="button" style="margin-bottom: 0">
+                                            <input type="radio" name="options" id="package-selection-option3-mobile" autocomplete="off">
+                                            <div class="card-body">
+                                                <a data-toggle="collapse" href="#plus-package-accordion" aria-expanded="false" aria-controls="plus-package-accordion">
+                                                    <div class="row justify-content-between">
+                                                        <div class="col-8">
+                                                            <i class="glyphicon glyphicon-menu-down"></i>
+                                                            <i class="glyphicon glyphicon-menu-right"></i>
+                                                            Plus pakket
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            € 35,-
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div id="plus-package-accordion" class="collapse" role="tabpanel">
+                                                    <br />
+                                                    <div>
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        <span class="remain-text-color">3 maanden online</span>
+                                                    </div>
+                                                    <hr />
+                                                    <div>
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        <span class="remain-text-color">Advertentie in Boten magazine</span>
+                                                    </div>
+                                                    <hr />
+                                                    <i class="glyphicon glyphicon-ok"></i>
+                                                    <span>1 week Top-advertentie</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Package selection only shown in tablet and larger-->
+                                <div class="d-none d-md-block">
+                                    <div class="row" data-toggle="buttons">
+                                        <div class="col-4">
+                                            <div href="#" class="btn package-selection" role="button">
+                                                <input type="radio" name="options" id="option1" autocomplete="off">
+                                                <div>
+                                                    <h3>€ 19,-</h3>
+                                                </div>
+                                                <br />
+                                                <h3>Budget pakket</h3>
+                                                <br />
+                                                <div>
+                                                    <i class="glyphicon glyphicon-ok"></i>
+                                                    <span class="remain-text-color">3 maanden online</span>
+                                                </div>
+                                                <div class="package-selection-footer">Kies dit pakket</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div href="#" class="btn package-selection active" role="button">
+                                                <div class="ribbon">Beste keuze</div>
+                                                <input type="radio" name="options" id="option2" autocomplete="off" checked>
+                                                <div>
+                                                    <h3>€ 26,-</h3>
+                                                </div>
+                                                <br />
+                                                <h3>Basis pakket</h3>
+                                                <br />
+                                                <div>
+                                                    <i class="glyphicon glyphicon-ok"></i>
+                                                    <span class="remain-text-color">3 maanden online</span>
+                                                </div>
+                                                <hr />
+                                                <i class="glyphicon glyphicon-ok"></i>
+                                                <span class="remain-text-color">3 Advertentie in Boten magazine</span>
+                                                <div class="package-selection-footer">Kies dit pakket</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div href="#" class="btn package-selection" role="button">
+                                                <input type="radio" name="options" id="option3" autocomplete="off">
+                                                <div>
+                                                    <h3>€ 35,-</h3>
+                                                </div>
+                                                <br />
+                                                <h3>Plus pakket</h3>
+                                                <br />
+                                                <div>
+                                                    <i class="glyphicon glyphicon-ok"></i>
+                                                    <span class="remain-text-color">3 maanden online</span>
+                                                </div>
+                                                <hr />
+                                                <i class="glyphicon glyphicon-ok"></i>
+                                                <span class="remain-text-color">3 Advertentie in Boten magazine</span>
+                                                <hr />
+                                                <i class="glyphicon glyphicon-ok"></i>
+                                                <span class="remain-text-color">1 week Top-advertentie</span>
+                                                <i class="icon-info" data-toggle="tooltip" data-placement="top" title="Extra informatie..."></i>
+                                                <div class="package-selection-footer">Kies dit pakket</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                </div>
+                                <br />
+                                <hr />
+                                <br />
+                                <h1>Kies een advertentieformaat</h1>
+                                <div>Selecteer een advertentieformaat en het aantal edities van het Boten Magazine</div>
+                                <div class="package-selection-radios">
+                                    <div class="d-md-none">
+                                        <select class="form-control" id="selectEdities">
+                                            <option>1 Editie - Normale prijs</option>
+                                            <option>2 Edities - 15% Korting</option>
+                                            <option>3 Edities - Extra korting tot wel 25%</option>
+                                        </select>
+                                    </div>
+                                    <!--Selecting formaat only shown in tablet and larger-->
+                                    <div class="d-none d-md-block">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="package-selection-radio">
+                                                    <label class="form-check-label custom-control custom-radio">
+                                                        <input class="form-check-input custom-control-input" type="radio" name="inlineRadioOptions" value="option1" checked>
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="package-selection-radio-title">
+                                                            1 Editie
+                                                            <br />
+                                                            <span class="package-selection-radio-sub-title">
+                                                                Normale prijs
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="package-selection-radio">
+                                                    <label class="form-check-label custom-control custom-radio">
+                                                        <input class="form-check-input custom-control-input" type="radio" name="inlineRadioOptions" value="option2">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="package-selection-radio-title">
+                                                            2 Edities
+                                                            <br />
+                                                            <span class="package-selection-radio-sub-title">
+                                                                15% Korting
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="package-selection-radio no-border">
+                                                    <label class="form-check-label custom-control custom-radio">
+                                                        <input class="form-check-input custom-control-input" type="radio" name="inlineRadioOptions" value="option3">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="package-selection-radio-title">
+                                                            3 Edities
+                                                            <br />
+                                                            <span class="package-selection-radio-sub-title">
+                                                                Extra korting tot wel 25%
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <br />
+                                <div class="package-selections-small">
+                                    <div class="row" data-toggle="buttons">
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div href="#" class="btn package-selection active" role="button">
+                                                <input type="radio" name="options" autocomplete="off">
+                                                <img src="assets/images/115.jpg" />
+                                                <h3>€ 26,-</h3>
+                                                <div class="small text-info">1/15e</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div href="#" class="btn package-selection" role="button">
+                                                <input type="radio" name="options" autocomplete="off">
+                                                <img src="assets/images/215.jpg" />
+                                                <h3>€ 53,-</h3>
+                                                <div class="small text-info">2/15e</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div href="#" class="btn package-selection" role="button">
+                                                <input type="radio" name="options" autocomplete="off">
+                                                <img src="assets/images/415.jpg" />
+                                                <h3>€ 109,-</h3>
+                                                <div class="small text-info">4/15e</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div href="#" class="btn package-selection" role="button">
+                                                <input type="radio" name="options" autocomplete="off">
+                                                <img src="assets/images/615.jpg" />
+                                                <h3>€ 159,-</h3>
+                                                <div class="small text-info">6/15e</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div href="#" class="btn package-selection" role="button">
+                                                <input type="radio" name="options" autocomplete="off">
+                                                <img src="assets/images/915.jpg" />
+                                                <h3>€ 239,-</h3>
+                                                <div class="small text-info">9/15e</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div href="#" class="btn package-selection" role="button">
+                                                <input type="radio" name="options" autocomplete="off">
+                                                <img src="assets/images/1515.jpg" />
+                                                <h3>€ 399,-</h3>
+                                                <div class="small text-info">15/15e</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <br />
+                                <hr />
+                                <br />
+                                <h1>Kies extra promoties</h1>
+                                <div>Verhoog je vindbaarheid met onze speciale promoties</div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="list-group extra-promos">
+                                            <li class="list-group-item w-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <label class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" checked>
+                                                                <span class="custom-control-indicator"></span>
+                                                                <span class="custom-control-description">
+                                                                    Automatisch omhoogplaatsen
+                                                                    <i class="glyphicon glyphicon-menu-down"></i>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto ml-auto">
+                                                        € 5,-
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item w-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <label class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-indicator"></span>
+                                                                <span class="custom-control-description">
+                                                                    1 week lang Top-advertentie
+                                                                    <i class="glyphicon glyphicon-menu-down"></i>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto ml-auto">
+                                                        € 9,-
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item w-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <label class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-indicator"></span>
+                                                                <span class="custom-control-description">
+                                                                    1 week lang Boegbeeld promotie
+                                                                    <i class="glyphicon glyphicon-menu-down"></i>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto ml-auto">
+                                                        € 25,-
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item w-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <label class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-indicator"></span>
+                                                                <span class="custom-control-description">
+                                                                    Vermelding van je eigen website bij de advertentie
+                                                                    <i class="glyphicon glyphicon-menu-down"></i>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto ml-auto">
+                                                        € 3,-
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item w-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <label class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-indicator"></span>
+                                                                <span class="custom-control-description">
+                                                                    Extra rubriek toevoegen aan je advertentie
+                                                                    <i class="glyphicon glyphicon-menu-down"></i>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto ml-auto">
+                                                        € 3,-
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item w-100">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <label class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-indicator"></span>
+                                                                <span class="custom-control-description">
+                                                                    Doorplaatsing naar Botenbank.nl
+                                                                    <i class="glyphicon glyphicon-menu-down"></i>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto ml-auto">
+                                                        € 12,50
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="text-right h1">
+                                    <span class="mr-2">Totaalbedrag</span>
+                                    <span class="text-primary">€ 54,-</span>
+                                </div>
+
+                                <br />
+                                <!--show only on mobile-->
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <button type="button" class="btn btn-link btn-sm d-md-none"><span class="glyphicon glyphicon-menu-left"></span>Annuleren</button>
+                                    </div>
+                                    <div class="col-4 text-right">
+                                        <button type="button" class="btn btn-primary btn-sm float-right d-md-none">Volgende</button>
+                                    </div>
+                                </div>
+
+                                <br />
+                                <!--show only on tablet and larger-->
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <button type="button" class="btn btn-link d-none d-md-block"
+                                                onclick="document.querySelector('#step-1 .step').click();"
+                                                style="padding-left: 0;">
+                                            <span class="glyphicon glyphicon-menu-left"></span>Advertentie maken
+                                        </button>
+                                    </div>
+                                    <div class="col-4 text-right">
+                                        <button type="button" class="btn btn-primary float-right d-none d-md-block btn-lg nextButton"
+                                                onclick="document.querySelector('#step-3 .step').click();">
+                                            Ga naar betalen
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="site-disclaimer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-sm-8">
+                    © 1996 - 2016 Boten.nl is een activiteit van Bohil Media, dochter van de Telegraaf Media Groep.
+                </div>
+                <div class="col col-12 col-sm-4">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cookie verklaring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cookie voorkeuren</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

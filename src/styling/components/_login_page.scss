@@ -1,0 +1,23 @@
+﻿#login-page {
+
+    button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+    i {
+        margin-right: 9px;
+        vertical-align: text-bottom;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.05rem;
+            vertical-align: middle;
+        }
+
+        &:before {
+            color: white;
+        }
+    }
+}

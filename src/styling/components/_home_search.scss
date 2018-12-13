@@ -1,0 +1,174 @@
+#home-search,
+#home-search-mobile {
+    .card-body {
+        padding: 1.53rem 2.66rem 2.66rem;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 17px;
+        color: $nav-link-disabled-color;
+        padding: 0 1rem 1.33rem;
+
+        &:hover {
+          border-color: #ececec #ececec transparent;
+        }
+
+        &.active {
+            border: none;
+            border-bottom: 1px solid theme-color("primary");
+            color: theme-color("primary");
+            background-color: transparent;
+        }
+    }
+
+    .tab-pane {
+        .input-group-addon {
+            background: none;
+        }
+    }
+
+    .home-category {
+        a {
+            @include media-breakpoint-down(lg) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+#home-search {
+    padding-top: 166px;
+    position: relative;
+    padding-bottom: 4rem;
+
+    &:before {
+        content: '';
+        background-image: url("../assets/images/boatsky2.jpg");
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: 0 bottom;
+        z-index: -1;
+        @media screen and (min-width: 1921px) {
+            background-size: 100% auto;
+        }
+        @include media-breakpoint-down(md){
+          background-size: auto;
+        }
+    }
+
+    .col,
+    .col-md-auto {
+        @include media-breakpoint-down(sm) {
+            width: 50%;
+        }
+    }
+
+    #title {
+        color: white;
+        font-size: 48px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        font-weight: bold;
+        text-align: right;
+        font-family: eb_garamondregular;
+    }
+
+    #search-card {
+        background-color: rgba(255,255,255,0.8);
+
+        #kopenhurentab {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #333;
+        }
+
+        input {
+            height: 52px;
+            padding: 0.62rem 1.6rem 0.62rem 1.2rem;
+            border: none;
+            border-bottom-right-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+        }
+
+        button {
+            height: 52px;
+        }
+        @include media-breakpoint-down (sm) {
+            button {
+                padding: 0.62rem 0;
+                width: 100%;
+            }
+        }
+
+        #advanced-search-link {
+            position: absolute;
+            right: 2.66rem;
+            text-decoration: underline;
+            color: theme-color('secondary')
+        }
+
+        .input-group-addon {
+            background: white;
+            padding-right: 0;
+            padding-left: 1.2rem;
+            border: none;
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
+
+            &:before {
+                font-size: 1.1rem;
+                color: $gray-500;
+            }
+        }
+
+        input {
+            box-shadow: none;
+            border-left: none;
+
+            &:focus {
+                border-color: $border-color;
+            }
+        }
+    }
+}
+
+#home-search-mobile {
+    .nav-item {
+        width: 50%;
+        text-align: center;
+
+        .nav-link {
+            color: inherit;
+            font-size: 1.1rem;
+            padding: 1.2rem 0;
+
+            &.active {
+                color: theme-color("primary");
+                border: none;
+                border-bottom: 2px solid theme-color("primary");
+                background-color: transparent;
+            }
+        }
+    }
+
+    button,
+    input {
+        height: 52px;
+    }
+
+    button {
+        &:before {
+            color: white;
+        }
+    }
+
+    #advanced-search-link-mobile {
+        text-decoration: underline;
+    }
+    border-bottom: $border-width $border-color solid;
+    padding-bottom: 26px;
+}

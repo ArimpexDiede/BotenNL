@@ -1,0 +1,32 @@
+#search-sorting {
+    color: #585858;
+    padding: 10px 14px;
+    background-color: $gray-200;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 0 !important;
+    }
+
+    select {
+        display: inline-block;
+        min-width: 15px;
+        height: 32px;
+        cursor: pointer;
+        padding-bottom: 4px;
+    }
+
+    #sorting-search-result {
+        /*color: theme-color("primary");*/
+        padding-right: 31px;
+        background: #fff url("../assets/images/selectIndicator.svg") no-repeat right 0.75rem center;
+        background-clip: padding-box;
+        background-size: 12px 12px;
+        text-align-last: left;
+        vertical-align: middle;
+        width: calc(100% - 90px);
+    }
+
+    #sorting-search-pagingsize {
+        border-radius: $border-radius;
+    }
+}

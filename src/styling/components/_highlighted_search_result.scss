@@ -1,0 +1,101 @@
+.highlighted-search-results {
+    margin-bottom: 12px;
+
+    .image-caption {
+        background-color: #12539eb3;
+        padding: 3px 8px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 0.8rem;
+        margin-top: -24px;
+        z-index: 999;
+        position: relative;
+    }
+
+    .highlight-imageoverlay {
+        width: 24px;
+        height: 22px;
+        background-color: theme-color('secondary');
+        padding: 4px 5px 0;
+        position: absolute;
+        top: 0;
+        left: 25px;
+        z-index: 2;
+
+        i {
+            &:before {
+                color: white;
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            border-right: 12px solid theme-color('secondary');
+            border-left: 12px solid theme-color('secondary');
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            left: 0;
+            top: 12px;
+        }
+    }
+
+    .highlighted-search-item-info {
+        position: relative;
+
+        h4 {
+            padding: 8px 0;
+            font-size: 1rem;
+            font-weight: bold;
+            line-height: 1.16;
+            margin-bottom: 0;
+
+            a {
+                text-decoration: none !important;
+                color: theme-color("primary") !important;
+            }
+        }
+
+        a:not(.btn) {
+            color: theme-color("secondary");
+            text-decoration: underline;
+        }
+
+        .product-specification {
+            height: 25px;
+            overflow: hidden;
+        }
+
+        .product-location {
+            height: 25px;
+            overflow: hidden;
+            display: none;
+        }
+
+        .placeholder-link {
+            height: 25px;
+            overflow: hidden;
+        }
+
+        .price {
+            font-weight: bold;
+            color: theme-color("secondary");
+
+            .text-info {
+                font-size: 0.8rem;
+                text-decoration: line-through;
+                padding-left: 5px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .col {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .new-content-info {
+            border-bottom: $border-width $border-color solid;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+﻿.order-summary {
+    .card {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .card-header {
+        border-bottom: none;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+
+    .list-item {
+        width: 100% !important;
+        list-style: none;
+        padding: 10px 0 10px 0;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $border-color;
+        }
+    }
+
+    .icon-payment_ideal, .icon-payment_mastercard, .icon-payment_visa {
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,44 @@
+﻿@import "../bootstrap/_mixins";
+
+.last-content {
+    .last-content-info {
+        font-size: 0.9375rem;
+        padding-top: 1rem;
+
+
+        h4 {
+            padding: 12px 0 5px 0;
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 1.16;
+            margin-bottom: 0;
+            overflow: hidden;
+
+            a {
+                text-decoration: none !important;
+                color: theme-color("primary") !important;
+            }
+        }
+
+        a:not(.btn) {
+            color: theme-color("secondary");
+            text-decoration: underline;
+        }
+
+        .price {
+            font-size: 1.0625rem;
+            font-weight: bold;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .col {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .last-content-info {
+            border-bottom: $border-width $border-color solid;
+        }
+    }
+}

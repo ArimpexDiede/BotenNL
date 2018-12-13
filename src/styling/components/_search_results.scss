@@ -1,0 +1,102 @@
+.search-results {
+    .search-result {
+        padding-bottom: 20px;
+        border-bottom: $border-width $border-color solid;
+        margin-top: 20px;
+
+        .col {
+            .row {
+                margin-top: 11px;
+                @include media-breakpoint-down(sm){
+                  max-width: 100%;
+                }
+            }
+
+            .product-specification {
+                height: 25px;
+                overflow: hidden;
+            }
+
+            .product-location {
+                height: 25px;
+                overflow: hidden;
+            }
+
+            .placeholder-link {
+                height: 25px;
+                overflow: hidden;
+            }
+
+            .text-right {
+                .btn {
+                  font-family: fira_sansregular, sans-serif;
+                    @include media-breakpoint-only(md) {
+                        padding: 8px 27px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        a:not(.btn) {
+            color: theme-color("secondary");
+            text-decoration: underline;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+
+            a {
+                color: $gray-800 !important;
+                text-decoration: none !important;
+            }
+            @include media-breakpoint-down(sm) {
+              margin-top: 10px;
+            }
+        }
+
+
+    }
+}
+
+.search-bottom-text {
+    h3 {
+        font-size: 25px;
+        color: theme-color("primary");
+        margin-bottom: 25px;
+    }
+}
+
+#search-page {
+    #afstand-accordion {
+        .btn.btn-secondary {
+            width: 100%;
+            padding: 14px 0;
+            font-family: fira_sansregular;
+            font-size: 1rem;
+
+
+            &.sticky-btn {
+                position: fixed;
+                bottom: 0;
+                width: 226px;
+                z-index: 10000;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            @include media-breakpoint-down(md) {
+
+              width: 100% !important;
+              left: 0;
+              bottom: 0;
+              z-index: 1080;
+            }
+
+        }
+    }
+
+    .btn.btn-outline-info.float-right {
+        padding: 9px 12px 8px;
+    }
+}

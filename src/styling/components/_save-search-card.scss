@@ -1,0 +1,98 @@
+#save-search-card {
+    h6 {
+        font-size: 1rem;
+        margin-top: -3px;
+        margin-bottom: 29px;
+        font-family: fira_sansregular;
+        color: #424242;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .icon-savesearch {
+        position: absolute;
+        top: 0.85rem;
+        right: 1.25rem;
+        font-size: 1.5rem;
+
+        &::before {
+            color: theme-color('primary');
+        }
+    }
+}
+
+#save-search-card-small-tablet {
+    margin-bottom: 20px;
+
+    .col-12.col-md-4.align-middle.pt-0.mb-2 {
+        padding-top: 5px !important;
+        padding-left: 27px;
+        @include media-breakpoint-down(sm) {
+            padding: 0;
+            text-align: center;
+
+            .card-title {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .icon-savesearch {
+        font-size: 1.5rem;
+        vertical-align: middle;
+        padding-right: 9px;
+
+        &::before {
+            color: #fff;
+        }
+    }
+
+    .card-body {
+        padding: 15px 11px;
+    }
+
+    .btn,
+    .filter-option-badge,
+    h6 {
+        display: inline;
+    }
+
+    .btn {
+        width: 48%;
+        padding: 9px 0;
+
+        &:nth-child(2) {
+            margin-left: 13px;
+            padding: 13px 0 8px;
+        }
+        @include media-breakpoint-down(sm) {
+            width: calc(50% - 2px);
+
+            &:nth-child(2) {
+                margin: 0;
+            }
+        }
+    }
+
+    .glyphicon {
+        padding-right: 10px;
+    }
+
+    .filter-option-badge {
+        border: 1px solid white;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        padding-top: 4px;
+        line-height: 1.25;
+    }
+
+    .btn-sm {
+        font-size: 1rem;
+    }
+}

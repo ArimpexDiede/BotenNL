@@ -1,0 +1,32 @@
+﻿.collapsible-tab {
+    a {
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .glyphicon {
+        padding-right: 10px;
+    }
+
+    .glyphicon-menu-right, .text-info {
+        display: none;
+    }
+
+    .glyphicon-menu-down {
+        display: inline-block;
+    }
+
+    .collapsed {
+        .glyphicon-menu-right, .text-info {
+            display: inline-block;
+        }
+
+        .glyphicon-menu-down {
+            display: none;
+        }
+    }
+}

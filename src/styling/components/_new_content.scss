@@ -1,0 +1,56 @@
+﻿@import "../bootstrap/_mixins";
+
+.new-content {
+    .new-content-info {
+        font-size: 1.06rem;
+
+        h4 {
+            padding: 12px 0 12px 0;
+            font-size: 19px;
+            font-weight: bold;
+            line-height: 1.16;
+            height: 33px;
+            overflow: hidden;
+
+            a {
+                text-decoration: none !important;
+                color: #424242 !important;
+            }
+        }
+
+        a:not(.btn) {
+            color: theme-color("secondary");
+            text-decoration: underline;
+        }
+
+        .price {
+            font-size: large;
+            white-space: nowrap;
+
+        }
+
+        .btn {
+          font-family: fira_sansregular;
+        }
+    }
+
+    .btn-lg {
+      margin-top: 62px;
+      margin-bottom: 16px;
+      font-family: fira_sansregular;
+      @include media-breakpoint-down(sm) {
+            margin-top: 12px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .col {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .new-content-info {
+            border-bottom: $border-width $border-color solid;
+        }
+    }
+}

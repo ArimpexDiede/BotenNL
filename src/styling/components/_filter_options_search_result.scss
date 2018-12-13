@@ -1,0 +1,134 @@
+.filter-options {
+    option[hidden] {
+        display: none !important;
+    }
+
+    option.hidden {
+        display: none !important;
+    }
+
+    .input-group-addon + select {
+      border-left: none;
+    }
+
+    .alert {
+        color: #e74c3c;
+        border-color: #e74c3c;
+        background-color: #fff;
+        padding-right: 60px;
+        position: relative;
+        font-size: 13px;
+        margin-bottom: 0;
+
+        ul {
+            padding-left: 12px;
+            margin-top: 13px;
+            margin-bottom: 3px;
+        }
+
+        &.sticky-alert {
+            position: fixed;
+            bottom: 49px;
+            z-index: 999;
+            width: 226px;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                left: 0;
+            }
+        }
+
+        &::before {
+            content: '\e92b';
+            font-family: Botenbank;
+            position: absolute;
+            right: 8px;
+            top: calc(50% - 22px);
+            font-size: 30px;
+        }
+    }
+
+    a {
+        color: $black;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .custom-control-description {
+        font-size: 0.9rem;
+    }
+
+    .glyphicon-chevron-down,
+    .text-info {
+        display: none;
+    }
+
+    .glyphicon-chevron-up {
+        display: inline-block;
+    }
+
+    .collapsed {
+        .glyphicon-chevron-down,
+        .text-info {
+            display: inline-block;
+        }
+
+        .glyphicon-chevron-up {
+            display: none;
+        }
+    }
+
+    .filter-option {
+        border-bottom: 1px solid $border-color;
+        margin-bottom: 19px;
+        padding-bottom: 19px;
+
+        input[type="number"] {
+            -webkit-appearance: textfield;
+            -moz-appearance: textfield;
+            appearance: textfield;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+        .text-info {
+            font-size: 0.8rem;
+            font-weight: normal;
+        }
+
+        h6 {
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 1rem;
+            font-family: fira_sansregular;
+        }
+
+        .input-group-addon {
+            background: none;
+            color: $gray-500;
+        }
+
+        &#prijs-filter-option {
+            padding-bottom: 10px;
+        }
+
+        .sub-filter-option {
+            a {
+                color: theme-color("primary");
+                text-decoration: underline;
+                display: none;
+
+                &.collapsed,
+                &.show-less {
+                    display: block;
+                }
+            }
+
+            #morematerials-accordion {
+                margin-top: 10px;
+            }
+        }
+    }
+}

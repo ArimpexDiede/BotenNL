@@ -1,0 +1,161 @@
+.topnav {
+    #navbarText {
+        margin-top: 4px;
+
+        .icon::before {
+            color: theme-color('primary');
+            font-size: 1.4rem;
+            vertical-align: sub;
+        }
+    }
+
+    .navbar-brand {
+        padding-top: 0.4rem;
+    }
+
+    .dropdown {
+        margin-top: -6px;
+
+        h4 {
+            color: theme-color("primary");
+            font-weight: bold;
+            padding: 0.25rem 1.5rem;
+        }
+
+        img {
+            padding: 0.25rem 1.5rem;
+        }
+
+        .dropdown-item {
+            span {
+                color: theme-color("primary");
+                background-color: $blue-lightest;
+                padding: 0.4em 0.6em;
+            }
+        }
+    }
+
+    .dropdown-toggle {
+        &::after {
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+            border-left: none;
+            border-top: none;
+            border-right: 2px solid;
+            border-bottom: 2px solid;
+            margin-bottom: 2px;
+            margin-left: 5px;
+        }
+    }
+
+    .navbar {
+        padding: 1rem 0;
+
+        .text-muted {
+            line-height: normal;
+            padding: 0.25rem 1.5rem;
+        }
+        @include media-breakpoint-down(md) {
+            .nav-item {
+                &.show {
+                    margin-bottom: 10px;
+                }
+                i {
+                    min-width: 40px;
+                    display: inline-block;
+                    text-align: center;
+                }
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            .navbar-collapse {
+                position: absolute;
+                right: 0;
+
+                .nav-item {
+
+                    a {
+                        line-height: 0;
+                        padding-right: 0;
+                        position: relative;
+                    }
+
+                    &:not(:last-child) {
+                        padding-right: 1rem;
+
+                        &::before {
+                            content: '';
+                            padding-right: 0.8rem;
+                            border-right: 2px solid theme-color('secondary');
+                            position: absolute;
+                            right: -7px;
+                            height: 20px;
+                            top: 11px;
+                        }
+                    }
+
+                    &:not(:first-child) {
+                        padding-left: 1rem;
+                    }
+
+                    .dropdown-menu {
+                        width: 55rem !important;
+                        padding: 0.8rem 0;
+                        top: 2.7rem;
+                        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                            /* IE10+ CSS styles go here */
+                            top: 2rem;
+                        }
+                        -webkit-box-shadow: 0 10px 6px -6px #777;
+                        -moz-box-shadow: 0 10px 6px -6px #777;
+                        box-shadow: 0 10px 6px -6px #777;
+
+                        .dropdown-item {
+                            line-height: normal;
+                            padding: 0.25rem 1.5rem;
+                        }
+
+                        &.sm {
+                            width: 36rem !important;
+                            left: -12rem;
+                        }
+                    }
+
+                    #dropdown-menu-motorboten {
+                        left: -26rem;
+
+                        &.sm {
+                            left: -7rem;
+                        }
+                    }
+
+                    #dropdown-menu-zeilboten {
+                        left: -33.9rem;
+
+                        &.sm {
+                            left: -14.9rem;
+                        }
+                    }
+
+                    #dropdown-menu-sportboten {
+                        left: -40.7rem;
+
+                        &.sm {
+                            left: -21.7rem;
+                        }
+                    }
+
+                    #dropdown-menu-toebehoren {
+                        left: -48.25rem;
+
+                        &.sm {
+                            left: -29.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    border-bottom: 1px solid #cfeaf8;
+}

@@ -1,0 +1,23 @@
+.video-placeholder {
+    overflow: hidden;
+    position: relative;
+
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.video-placeholder-small {
+    @extend .video-placeholder;
+    height: $video-placeholder-small-sm;
+
+    @include media-breakpoint-up(md) {
+        height: $video-placeholder-medium-md;
+    }
+}
+
+

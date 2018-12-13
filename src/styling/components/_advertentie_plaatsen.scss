@@ -1,0 +1,46 @@
+﻿@import "components/_package_selection";
+@import "components/_collapsible_tab";
+@import "components/_upload_file";
+@import "components/_wizard";
+@import "components/_order_summary";
+
+
+#advertentie-plaatsen {
+    margin-bottom: 120px;
+
+    .wizard {
+        li {
+            width: 33%;
+        }
+
+        .col-form-label {
+            padding-bottom: 5px;
+        }
+    }
+
+    .breadcrumb {
+        padding: 0;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+
+    .btn-link {
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .glyphicon-menu-left {
+        vertical-align: middle;
+        padding-right: 5px;
+    }
+}

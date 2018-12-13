@@ -1,0 +1,7 @@
+﻿.flex-column {
+    cursor: pointer;
+
+    .nav-link:not(.active) {
+        color: $body-color;
+    }
+}

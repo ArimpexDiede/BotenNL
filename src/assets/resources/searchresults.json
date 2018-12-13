@@ -1,0 +1,22 @@
+﻿[
+  {
+    "name": "Yamaha (merk)",
+    "code": "merk-Yamaha"
+  },
+  {
+    "name": "Yanmar (merk)",
+    "code": "merk-Yanmar"
+  },
+  {
+    "name": "Yamarin (merk)",
+    "code": "merk-Yamarin"
+  },
+  {
+    "name": "Yacht Centre Warn (bedrijf)",
+    "code": "bedrijf-Yacht Centre Warn"
+  },
+  {
+    "name": "Yacht-Gallery (bedrijf)",
+    "code": "bedrijf-Yacht-Gallery"
+  }
+]

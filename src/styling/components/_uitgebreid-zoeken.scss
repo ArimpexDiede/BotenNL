@@ -1,0 +1,188 @@
+#uitgebreid-zoeken {
+    #algemeen-accordion .col-12 .card {
+        @include media-breakpoint-up(lg) {
+            min-height: 528px;
+        }
+    }
+
+    .alert {
+        color: #e74c3c;
+        border-color: #e74c3c;
+        background-color: #fff;
+        padding-right: 60px;
+        position: absolute;
+        font-size: 13px;
+        margin-bottom: 0;
+        bottom: 71px;
+        right: 11px;
+        text-align: left;
+        @include media-breakpoint-down(sm) {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            bottom: 76px;
+        }
+
+        ul {
+            padding-left: 12px;
+            margin-top: 13px;
+            margin-bottom: 3px;
+        }
+
+        &.sticky-alert {
+            position: fixed;
+            bottom: 49px;
+            z-index: 999;
+            width: 226px;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                left: 0;
+            }
+        }
+
+        &::before {
+            content: '\e92b';
+            font-family: Botenbank;
+            position: absolute;
+            right: 8px;
+            top: calc(50% - 22px);
+            font-size: 30px;
+        }
+    }
+
+    input[type="number"] {
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
+    .collapsible-tab {
+        a {
+            font-weight: normal;
+            font-size: 17px;
+            outline: 0;
+        }
+    }
+
+    .category {
+        height: 100px;
+        border: 1px solid $border-color;
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .category-title {
+            font-size: 0.8125rem;
+            padding-top: 10px;
+        }
+
+        .icon {
+            font-size: 2rem;
+            padding-top: 17px;
+            &::before {
+              color: theme-color('primary')
+            }
+        }
+        @include media-breakpoint-down(md) {
+            height: 142px;
+
+            .category-title {
+                font-size: 15px;
+            }
+
+            .icon {
+                font-size: 3rem;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 15px;
+        }
+
+        input {
+            display: none;
+        }
+
+        &.active {
+            border: 1px solid theme-color("primary");
+            background-color: $blue-lighter;
+        }
+
+        &:hover {
+            border: 1px solid theme-color("primary");
+            cursor: pointer;
+        }
+    }
+
+    .select-group-addon {
+        padding-left: 15px;
+        padding-right: 0;
+        background: none;
+        color: $gray-600;
+    }
+
+    #bouwjaarmax,
+    #bouwjaarmin,
+    .price-select {
+        border-left: none;
+    }
+
+    .btn-link {
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    #fixed-button-box {
+        position: fixed;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 999;
+        border-top: 1px solid #ccc;
+        padding: 1rem 0 !important;
+        box-shadow: 0 -1px 4px rgba(0,0,0,0.2);
+
+        .row.justify-content-between {
+            max-width: 1001px;
+            margin: auto;
+
+            .btn {
+                padding: 13px 39px;
+                font-size: 1rem;
+
+                .glyphicon.glyphicon-menu-left {
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+
+                @include media-breakpoint-down(md) {
+                    padding: 13px;
+                }
+            }
+        }
+
+        #reset-btn {
+            background-color: theme-color('secondary');
+
+            i::before {
+                color: #fff;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .form-group.col-12.col-md-6:nth-child(2) .col-form-label[for="inputGewicht"] {
+            display: none;
+        }
+    }
+}

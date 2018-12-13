@@ -1,0 +1,95 @@
+@import "../bootstrap/_mixins";
+
+#arch-content {
+    h4 {
+        a {
+            text-decoration: none !important;
+            color: #424242 !important;
+            display: block;
+            height: 1.5rem;
+            overflow: hidden;
+        }
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 0;
+        right: 12px;
+        font-family: fira_sansregular;
+    }
+    @include media-breakpoint-down(sm) {
+        img {
+            -o-object-fit: cover;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            position: relative;
+            max-height: 400px;
+        }
+
+        .arch-content-info {
+            border-bottom: $border-width $border-color solid;
+        }
+    }
+
+    #second-content {
+        margin-top: 47px;
+        overflow: hidden;
+
+        .col {
+            margin-bottom: 20px;
+
+            iframe {
+                transform: scale(1.025,1) translateX(5px);
+                @include media-breakpoint-only(md) {
+                    transform: scale(.75, 1) translateX(-48px);
+                }
+                @include media-breakpoint-down(sm) {
+                    margin: auto;
+                    display: block;
+                }
+            }
+
+            .home-ad-1 {
+                height: auto;
+            }
+
+            .home-ad-2 {
+                background-color: theme-color("primary");
+                margin-top: 24px;
+                border-radius: 2px;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    display: block;
+                    padding: 9px 12px;
+
+                    .line-1 {
+                        font-size: 2rem;
+                        font-weight: bold;
+
+                        span {
+                            &:nth-child(1) {
+                                color: theme-color('secondary');
+                            }
+                        }
+                    }
+
+                    .line-2 {
+                        font-size: 1.5rem;
+                        line-height: 0.9;
+
+                        .icon-pijl {
+                            vertical-align: middle;
+
+                            &::before {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

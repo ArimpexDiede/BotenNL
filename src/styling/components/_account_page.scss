@@ -1,0 +1,62 @@
+﻿#account-page {
+    .card-extra {
+        background-color: #f4f9fc;
+        border-color: #d0eaf9;
+
+        .vl {
+            border-left: 2px solid $border-color;
+            height: 65px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 28px 0 28px;
+        }
+
+        .text {
+            display: inline-block;
+            vertical-align: middle;
+            width: 80%;
+        }
+    }
+
+    .advertentie-item {
+        img {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        h4 {
+            font-weight: bold;
+        }
+
+        .card {
+            img {
+                width: 25px;
+            }
+
+            .card-body {
+                padding: 15px;
+            }
+        }
+
+        .save-btn {
+            text-decoration: none;
+
+            .glyphicon-heart {
+                font-size: x-large;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .email-melding {
+        text-align: right;
+
+        @include media-breakpoint-down(sm) {
+            text-align: left;
+            padding-top: 10px;
+        }
+    }
+}

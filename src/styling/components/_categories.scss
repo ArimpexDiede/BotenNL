@@ -1,0 +1,76 @@
+﻿#categories {
+    margin: 0 0 270px 0;
+
+    .btn-link {
+        padding-left: 0;
+    }
+
+    .glyphicon-menu-left {
+        vertical-align: middle;
+        padding-right: 5px;
+    }
+
+    .btn-link {
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .category {
+        height: 232px;
+        border: 1px solid $border-color;
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+
+        .category-title {
+            font-size: 1.0625rem;
+        }
+
+        .icon {
+            font-size: 4rem;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+
+        @include media-breakpoint-down(md) {
+            height: 142px;
+            margin-bottom: 15px;
+
+            .category-title {
+                font-size: 15px;
+            }
+
+            .icon {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        input {
+            display: none;
+        }
+
+        &.active {
+            border: 1px solid theme-color("primary");
+            background-color: $blue-lighter;
+            color: theme-color("primary");
+        }
+
+        &:hover {
+            border: 1px solid theme-color("primary");
+            cursor: pointer;
+        }
+    }
+
+    .form-check:not(:last-child) {
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 20px;
+    }
+
+    .form-check:not(:first-child) {
+        padding-top: 20px;
+    }
+}

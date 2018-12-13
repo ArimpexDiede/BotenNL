@@ -1,0 +1,334 @@
+@font-face {
+  font-family: 'Botenbank';
+  src:  url('../assets/fonts/botenbank/Botenbank.eot?c8wuld');
+  src:  url('../assets/fonts/botenbank/Botenbank.eot?c8wuld#iefix') format('embedded-opentype'),
+    url('../assets/fonts/botenbank/Botenbank.ttf?c8wuld') format('truetype'),
+    url('../assets/fonts/botenbank/Botenbank.woff?c8wuld') format('woff'),
+    url('../assets/fonts/botenbank/Botenbank.svg?c8wuld#Botenbank') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Botenbank' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pijl:before {
+  content: "\e946";
+  color: #c31617;
+}
+.icon-BTK_oranje-blauw_nl .path1:before {
+  content: "\e93f";
+  color: rgb(243, 145, 0);
+}
+.icon-BTK_oranje-blauw_nl .path2:before {
+  content: "\e940";
+  margin-left: -2em;
+  color: #c31617;
+}
+.icon-BTK_oranje-blauw_nl .path3:before {
+  content: "\e941";
+  margin-left: -2em;
+  color: #c31617;
+}
+.icon-BTK_oranje-blauw_nl .path4:before {
+  content: "\e942";
+  margin-left: -2em;
+  color: #c31617;
+}
+.icon-BTK_oranje-blauw_nl .path5:before {
+  content: "\e943";
+  margin-left: -2em;
+  color: #c31617;
+}
+.icon-BTK_oranje-blauw_nl .path6:before {
+  content: "\e944";
+  margin-left: -2em;
+  color: #c31617;
+}
+.icon-BTK_oranje-blauw_nl .path7:before {
+  content: "\e945";
+  margin-left: -2em;
+  color: #c31617;
+}
+.icon-Facebook:before {
+  content: "\e93a";
+}
+.icon-Twitter:before {
+  content: "\e93b";
+  color: #c31617;
+}
+.icon-Phone:before {
+  content: "\e93c";
+  color: #c31617;
+}
+.icon-Vergrootglas:before {
+  content: "\e93d";
+  color: #c31617;
+}
+.icon-User:before {
+  content: "\e93e";
+  color: #c31617;
+}
+.icon-magazine:before {
+  content: "\e939";
+  color: #c31617;
+}
+.icon-links:before {
+  content: "\e937";
+  color: #005398;
+}
+.icon-rechts:before {
+  content: "\e938";
+  color: #005398;
+}
+.icon-social_email_licht:before {
+  content: "\e932";
+  color: #c2e2f2;
+}
+.icon-social_facebook_licht:before {
+  content: "\e933";
+  color: #c2e2f2;
+}
+.icon-social_google_licht:before {
+  content: "\e934";
+  color: #c2e2f2;
+}
+.icon-social_linkedin_licht:before {
+  content: "\e935";
+  color: #c2e2f2;
+}
+.icon-social_twitter_licht:before {
+  content: "\e936";
+  color: #c2e2f2;
+}
+.icon-bulb:before {
+  content: "\e92e";
+  color: #c31617;
+}
+.icon-camera:before {
+  content: "\e92f";
+  color: #c31617;
+}
+.icon-sign:before {
+  content: "\e930";
+  color: #c31617;
+}
+.icon-boat:before {
+  content: "\e931";
+  color: #c31617;
+}
+.icon-social_twitter:before {
+  content: "\e90c";
+  color: #c31617;
+}
+.icon-social_facebook:before {
+  content: "\e913";
+  color: #c31617;
+}
+.icon-social_email:before {
+  content: "\e914";
+  color: #c31617;
+}
+.icon-payment_visa .path1:before {
+  content: "\e915";
+  color: rgb(255, 255, 255);
+}
+.icon-payment_visa .path2:before {
+  content: "\e916";
+  margin-left: -1.5498046875em;
+  color: rgb(248, 182, 0);
+}
+.icon-payment_visa .path3:before {
+  content: "\e917";
+  margin-left: -1.5498046875em;
+  color: rgb(26, 31, 113);
+}
+.icon-payment_visa .path4:before {
+  content: "\e918";
+  margin-left: -1.5498046875em;
+  color: rgb(26, 31, 113);
+}
+.icon-payment_mastercard .path1:before {
+  content: "\e919";
+  color: rgb(0, 0, 0);
+}
+.icon-payment_mastercard .path2:before {
+  content: "\e91a";
+  margin-left: -1.2626953125em;
+  color: rgb(255, 95, 0);
+}
+.icon-payment_mastercard .path3:before {
+  content: "\e91b";
+  margin-left: -1.2626953125em;
+  color: rgb(235, 0, 27);
+}
+.icon-payment_mastercard .path4:before {
+  content: "\e91c";
+  margin-left: -1.2626953125em;
+  color: rgb(247, 158, 27);
+}
+.icon-payment_ideal .path1:before {
+  content: "\e91d";
+  color: rgb(0, 0, 0);
+}
+.icon-payment_ideal .path2:before {
+  content: "\e91e";
+  margin-left: -1.099609375em;
+  color: rgb(0, 0, 0);
+}
+.icon-payment_ideal .path3:before {
+  content: "\e91f";
+  margin-left: -1.099609375em;
+  color: rgb(0, 0, 0);
+}
+.icon-payment_ideal .path4:before {
+  content: "\e920";
+  margin-left: -1.099609375em;
+  color: rgb(205, 0, 103);
+}
+.icon-payment_ideal .path5:before {
+  content: "\e921";
+  margin-left: -1.099609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-payment_ideal .path6:before {
+  content: "\e922";
+  margin-left: -1.099609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-payment_ideal .path7:before {
+  content: "\e923";
+  margin-left: -1.099609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-payment_ideal .path8:before {
+  content: "\e924";
+  margin-left: -1.099609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-payment_ideal .path9:before {
+  content: "\e925";
+  margin-left: -1.099609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-payment_ideal .path10:before {
+  content: "\e926";
+  margin-left: -1.099609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-payment_ideal .path11:before {
+  content: "\e927";
+  margin-left: -1.099609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-payment_ideal .path12:before {
+  content: "\e928";
+  margin-left: -1.099609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-payment_ideal .path13:before {
+  content: "\e929";
+  margin-left: -1.099609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-payment_ideal .path14:before {
+  content: "\e92a";
+  margin-left: -1.099609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-notification_warning:before {
+  content: "\e92b";
+  color: #f49817;
+}
+.icon-notification_succes:before {
+  content: "\e92c";
+  color: #1abc9c;
+}
+.icon-heartfilled:before {
+  content: "\e90a";
+  color: #c31617;
+}
+.icon-notification_error:before {
+  content: "\e904";
+  color: #e74c3c;
+}
+.icon-savesearch:before {
+  content: "\e905";
+  color: #c31617;
+}
+.icon-rotatebig:before {
+  content: "\e906";
+  color: #c31617;
+}
+.icon-print:before {
+  content: "\e907";
+  color: #c31617;
+}
+.icon-pdf:before {
+  content: "\e908";
+  color: #c31617;
+}
+.icon-info:before {
+  content: "\e909";
+  color: #c31617;
+}
+.icon-google:before {
+  content: "\e92d";
+  color: #c31617;
+}
+.icon-heart:before {
+  content: "\e90b";
+  color: #c31617;
+}
+.icon-deletebig2:before {
+  content: "\e90d";
+  color: #c31617;
+}
+.icon-deletebig:before {
+  content: "\e90e";
+  color: #4a4a4a;
+}
+.icon-Checkmarkbig:before {
+  content: "\e90f";
+  color: #c31617;
+}
+.icon-checkmark:before {
+  content: "\e910";
+  color: #c31617;
+}
+.icon-arrowup:before {
+  content: "\e911";
+  color: #c31617;
+}
+.icon-addimage:before {
+  content: "\e912";
+  color: #c31617;
+}
+.icon-category_zeilboten:before {
+  content: "\e902";
+  color: #c31617;
+}
+.icon-category_motorboten:before {
+  content: "\e903";
+  color: #c31617;
+}
+.icon-category_Toebehoren:before {
+  content: "\e900";
+  color: #c31617;
+}
+.icon-category_Sportboot:before {
+  content: "\e901";
+  color: #c31617;
+}

@@ -1,0 +1,27 @@
+﻿#register {
+    margin-bottom: 270px;
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 120px;
+    }
+
+    button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    i {
+        margin-right: 9px;
+        vertical-align: text-bottom;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.05rem;
+            vertical-align: middle;
+        }
+
+        &:before {
+            color: white;
+        }
+    }
+}
