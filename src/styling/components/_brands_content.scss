@@ -1,75 +1,37 @@
-@import "../bootstrap/_mixins";
+
 
 #brands-content {
-
-  .col.col-lg-3:nth-child(7), .col.col-lg-3:nth-child(8) {
-  @include media-breakpoint-only(md) {
-
-        display: none;
-      }
-  }
-
-    h6 {
-
+    .col.col-lg-3:nth-child(7),
+    .col.col-lg-3:nth-child(8) {
+        @include media-breakpoint-only(md) {
+            display: none;
+        }
     }
 
+
     .card {
-        height: 170px;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
 
         img {
-            margin: 0.9rem auto 1.3rem 3rem;
-            width: 135px;
-            height: 80px;
-            border-radius: 2px;
+          max-width: 265px;
         }
-
-        @include media-breakpoint-down(sm) {
-
-            text-align: center;
-
-            img {
-                margin-left: auto !important;
-                margin-right: auto !important;
-            }
-        }
-
-
+        @include media-breakpoint-down(sm) {}
 
         a {
             text-decoration: none;
             color: $body-color;
+            line-height: 114px;
+            padding: 1rem;
+            text-align: center;
         }
 
         .card-footer {
-            padding: 1.1rem 0.75rem 0rem 0.75rem;
-        }
-    }
-
-    #antaris {
-        img {
-            margin: 2rem auto 2.2rem 3rem;
-            height: 48px;
-        }
-    }
-
-    #jeanneau {
-        img {
-            height: 80px;
-            margin: 0.9rem auto 1.3rem 3rem;
-        }
-    }
-
-    #princess {
-        img {
-            height: 38px;
-            margin: 2.4rem auto 2.5rem 3rem;
+            padding: 1.1rem 0.75rem 0 0;
+            margin-top: 1rem;
         }
     }
 
     .card-deck {
         margin-bottom: 20px;
-
-
     }
 }

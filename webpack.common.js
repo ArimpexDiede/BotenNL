@@ -92,7 +92,7 @@ module.exports = {
         ])
     ],
     output: {
-        filename: 'scripts/[name].js',
+        filename: 'scripts/site-2-1-19.js',
         library: '[name]',
         libraryTarget: 'var',
         path: path.resolve(__dirname, 'dist')
@@ -151,7 +151,7 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             outputPath: 'images',    // where the fonts will go
-                            publicPath: '/screensbnl/images',       // override the default path
+                            publicPath: 'images',       // override the default path
                             name: '[name].[ext]'
                         }
                     }
@@ -165,7 +165,7 @@ module.exports = {
                         options: {
                             //outputPath: __dirname,    // where the fonts will go
                             outputPath: 'fonts',    // where the fonts will go
-                            publicPath: '/screensbnl/fonts',       // override the default path
+                            publicPath: 'fonts',       // override the default path
                             name: '[name].[ext]'
                         }
                     }

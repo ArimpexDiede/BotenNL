@@ -1,6 +1,6 @@
 @import "../bootstrap/_mixins";
 
-#arch-content {
+#arch-content-block {
     h4 {
         a {
             text-decoration: none !important;
@@ -21,20 +21,52 @@
         img {
             -o-object-fit: cover;
             object-fit: cover;
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 100%;
             position: relative;
             max-height: 400px;
+        }
+
+        .col {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
         }
 
         .arch-content-info {
             border-bottom: $border-width $border-color solid;
         }
     }
+    @include media-breakpoint-up(sm) {
+        .image-placeholder-large,
+        .image-placeholder-medium {
+            height: 387px;
+        }
+    }
+    @include media-breakpoint-up(md) {
+        .image-placeholder-large {
+            height: 264px;
+        }
+
+        .image-placeholder-medium {
+            height: 170px;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        .image-placeholder-large {
+            height: 357px;
+        }
+
+        .image-placeholder-medium {
+            height: 232px;
+        }
+    }
 
     #second-content {
         margin-top: 47px;
         overflow: hidden;
+        @include media-breakpoint-down(sm) {
+            margin-top: 0;
+        }
 
         .col {
             margin-bottom: 20px;

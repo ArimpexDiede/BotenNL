@@ -1,7 +1,8 @@
-#arch-content,
+#arch-content-block,
 .last-content,
 .new-content-info,
 .search-results {
+    .caption,
     .price {
         font-size: large;
         position: absolute;
@@ -11,11 +12,10 @@
         width: auto;
         left: 0;
         color: #fff;
-        padding-top: 0.1rem;
-        padding-bottom: 0.1rem;
         height: 30px;
-        font-family: $headings-font-family;
-        font-weight: bold;
+        /*font-family: $headings-font-family;
+        font-weight: bold;*/
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
 
         &::after {
             content: '';
@@ -25,14 +25,11 @@
             top: 0;
             z-index: 9999;
             position: absolute;
-            right: -20px;
+            right: -19px;
             border-left: 10px solid theme-color('secondary');
             border-bottom: 15px solid transparent;
             border-top: 15px solid theme-color('secondary');
             border-right: 10px solid transparent;
-        }
-        @include media-breakpoint-down(sm) {
-            top: -16px;
         }
     }
 }
@@ -50,5 +47,14 @@
 .search-results {
     .price {
         left: 12px;
+    }
+}
+
+#arch-content-block {
+    .thumbnail {
+        position: relative;
+        .caption {
+            bottom: -15px;
+        }
     }
 }

@@ -829,18 +829,16 @@ $image-height-largest-xs: auto;
 
 $image-height-large-lg: 316px;
 $image-height-large-md: 225px;
-$image-height-large-sm: 240px;
-$image-height-large-xs: auto;
+$image-height-large-sm: calc((100vw - 24px) * .75);
 
 $image-height-medium-lg: 206px;
 $image-height-medium-md: 145px;
-$image-height-medium-sm: 240px;
-$image-height-medium-xs: auto;
+$image-height-medium-sm: calc((100vw - 24px) * .75);
 
 
 $image-height-small-lg: 151px;
 $image-height-small-md: 151px;
-$image-height-small-sm: 240px;
+$image-height-small-sm: calc((100vw - 24px) * .75);
 $image-height-small-xs: auto;
 
 $image-height-squared-small-lg: 147px;

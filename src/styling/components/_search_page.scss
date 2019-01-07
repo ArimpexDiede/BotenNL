@@ -9,6 +9,7 @@
     margin-bottom: 30px;
 
     .image-placeholder {
+      background-color: #eee;
         img {
             position: relative;
             right: auto;
@@ -17,6 +18,13 @@
             -o-object-fit: cover;
             object-fit: cover;
             height: 100%;
+
+            &.portrait-img {
+                object-fit: unset;
+                width: auto !important;
+                margin: auto;
+                display: block !important;
+            }
         }
     }
 

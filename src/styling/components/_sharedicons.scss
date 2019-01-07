@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'sharedicons';
+  src:  url('../assets/fonts/sharedicons/sharedicons.eot?ap9084');
+  src:  url('../assets/fonts/sharedicons/sharedicons.eot?ap9084#iefix') format('embedded-opentype'),
+    url('../assets/fonts/sharedicons/sharedicons.ttf?ap9084') format('truetype'),
+    url('../assets/fonts/sharedicons/sharedicons.woff?ap9084') format('woff'),
+    url('../assets/fonts/sharedicons/sharedicons.svg?ap9084#sharedicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icons-"], [class*=" icons-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sharedicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: theme-color('primary');
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icons-send:before {
+  content: "\e947";
+}
+.icons-gesprek:before {
+  content: "\e948";
+}
+.icons-Phone:before {
+  content: "\e944";
+}

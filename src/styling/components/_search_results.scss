@@ -1,4 +1,8 @@
 .search-results {
+    li br + .row {
+        margin: 0 !important;
+    }
+
     .search-result {
         padding-bottom: 20px;
         border-bottom: $border-width $border-color solid;
@@ -7,8 +11,8 @@
         .col {
             .row {
                 margin-top: 11px;
-                @include media-breakpoint-down(sm){
-                  max-width: 100%;
+                @include media-breakpoint-down(sm) {
+                    max-width: 100%;
                 }
             }
 
@@ -29,11 +33,20 @@
 
             .text-right {
                 .btn {
-                  font-family: fira_sansregular, sans-serif;
+                    font-family: fira_sansregular, sans-serif;
                     @include media-breakpoint-only(md) {
                         padding: 8px 27px;
                         font-size: 1rem;
                     }
+                }
+            }
+
+            .image-placeholder-small {
+                @include media-breakpoint-up(sm) {
+                    height: 387px;
+                }
+                @include media-breakpoint-up(md) {
+                    height: 170px;
                 }
             }
         }
@@ -51,11 +64,9 @@
                 text-decoration: none !important;
             }
             @include media-breakpoint-down(sm) {
-              margin-top: 10px;
+                margin-top: 10px;
             }
         }
-
-
     }
 }
 
@@ -71,28 +82,16 @@
     #afstand-accordion {
         .btn.btn-secondary {
             width: 100%;
-            padding: 14px 0;
-            font-family: fira_sansregular;
-            font-size: 1rem;
+            cursor: pointer;
+        }
 
-
+        #search-btn-wrap {
             &.sticky-btn {
                 position: fixed;
                 bottom: 0;
                 width: 226px;
                 z-index: 10000;
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0;
             }
-
-            @include media-breakpoint-down(md) {
-
-              width: 100% !important;
-              left: 0;
-              bottom: 0;
-              z-index: 1080;
-            }
-
         }
     }
 

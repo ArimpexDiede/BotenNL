@@ -1,0 +1,21 @@
+#atstbx {
+    .at-share-btn-elements {
+        & > .at-icon-wrapper {
+            background-color: theme-color("primary") !important;
+        }
+
+        span.at-icon-wrapper {
+            width: 20px !important;
+            height: 20px !important;
+
+            svg {
+                width: 20px !important;
+                height: 20px !important;
+            }
+        }
+
+        .at-share-btn {
+          padding: 4px;
+        }
+    }
+}

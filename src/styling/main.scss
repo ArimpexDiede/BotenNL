@@ -29,9 +29,15 @@
 @import "components/_videos";
 @import "components/_search_sorting";
 @import "components/_color_box";
+@import "components/_svg-icons";
+@import "components/_fixed_button_box";
+@import "components/_social-media";
+@import "components/_telefoonnummer";
+@import "components/_sharedicons";
 
 body {
     font-size: 15px !important;
+    overflow-x: hidden;
 
     .easy-autocomplete {
         width: 100% !important;
@@ -99,7 +105,7 @@ body {
         }
 
         .site-block-content {
-            margin-top: 10px;
+            margin-top: 36px;
             margin-bottom: 39px;
 
             &#news-content {
@@ -151,7 +157,7 @@ body {
                     text-decoration: underline;
                 }
 
-                .price {
+                .caption, .price {
                     top: -15px;
                 }
             }
@@ -166,6 +172,13 @@ body {
                 -o-object-fit: cover;
                 object-fit: cover;
                 height: 100%;
+
+                &.portrait-img {
+                    object-fit: unset;
+                    width: auto !important;
+                    margin: auto;
+                    display: block !important;
+                }
             }
         }
 
